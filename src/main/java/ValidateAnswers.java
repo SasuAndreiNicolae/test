@@ -48,6 +48,7 @@ public class ValidateAnswers extends HttpServlet
         System.out.println(cr);
         request.getSession().setAttribute("answers",cr);
         response.sendRedirect("index.jsp");
+        System.out.println("done");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException
